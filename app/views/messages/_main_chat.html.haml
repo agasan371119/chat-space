@@ -11,12 +11,11 @@
     = link_to edit_group_path(current_user), class: "main-header__edit-btn" do
       Edit
   .messages
-    .message
-      = render @messages
-      .message__upper-info 
-        %p.message__upper-info__talker 
-        %p.message__upper-info__date 
-      %p.message__text 
+    = render @messages
+    .message__upper-info 
+      %p.message__upper-info__talker 
+      %p.message__upper-info__date 
+    %p.message__text 
   .form
     = form_for [@group, @message] do |f|
       .input-box
