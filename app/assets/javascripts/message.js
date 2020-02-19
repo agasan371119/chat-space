@@ -61,6 +61,7 @@ $(function() {
       }
     })
     .fail(function() {
+      alert('error');
     });
   }
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
